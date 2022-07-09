@@ -8,8 +8,6 @@ public class Gene_Nivel : MonoBehaviour
     [SerializeField] private float distanciaMinima;
     [SerializeField] private Transform puntoFinal;
     [SerializeField] private int cantidadInicial;
-    //[SerializeField] private Transform Eliminar;
-    //[SerializeField] private GameObject prefab;
     private Transform jugador;
 
     // Start is called before the first frame update
@@ -30,10 +28,7 @@ public class Gene_Nivel : MonoBehaviour
         {
             GenerarParteNivel();
         }
-        //if (Vector2.Distance(jugador.position, Eliminar.position) < distanciaMinima)
-        //{
-        //prefab.SetActive(false);
-        //}
+     
     }
 
     private void GenerarParteNivel()
