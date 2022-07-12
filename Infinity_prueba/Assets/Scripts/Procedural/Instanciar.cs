@@ -12,16 +12,15 @@ public class Instanciar : MonoBehaviour
     void Start()
     {
         jugador = GameObject.FindGameObjectWithTag("Player").transform;
-        if (Vector2.Distance(jugador.position, instanciar.position) < distancia)
-        {
-            int numeroAleatorio = Random.Range(0, Mesa.Length);
-            Instantiate(Mesa[numeroAleatorio]);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (Vector3.Distance(jugador.position, instanciar.position) < distancia)
+        {
+            int numeroAleatorio = Random.Range(0, Mesa.Length);
+            Instantiate(Mesa[numeroAleatorio]);
+        }
     }
 }

@@ -24,8 +24,9 @@ public class Gene_Nivel : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Vector2.Distance(jugador.position, puntoFinal.position) < distanciaMinima)
+        if (Vector3.Distance(jugador.position, puntoFinal.position) < distanciaMinima)
         {
+            //Debug.Log(distancia);
             GenerarParteNivel();
         }
      
