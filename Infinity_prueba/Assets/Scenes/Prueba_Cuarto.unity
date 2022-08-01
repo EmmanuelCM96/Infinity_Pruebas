@@ -638,7 +638,7 @@ Transform:
   m_Children:
   - {fileID: 896385175}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &278891474
 PrefabInstance:
@@ -1041,7 +1041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520747709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1804334039}
@@ -1591,6 +1591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1106304387544347273, guid: f42c990fd3c24134c9e16a617b55b4bb, type: 3}
+      propertyPath: m_TagString
+      value: Borrar
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f42c990fd3c24134c9e16a617b55b4bb, type: 3}
 --- !u!4 &767375872 stripped
@@ -2095,6 +2099,7 @@ MonoBehaviour:
   partesNivel:
   - {fileID: 7048366955653333358, guid: 0408fbd8468ae4f4da89d5d6720616aa, type: 3}
   - {fileID: 7593032562558461340, guid: 38eb01b066477ef4da620962a3fbc678, type: 3}
+  - {fileID: 4541741486606953155, guid: de574bbdce7f53445a78378b5e206f3d, type: 3}
   distanciaMinima: 5
   puntoFinal: {fileID: 624098847}
   cantidadInicial: 0
@@ -2365,6 +2370,10 @@ PrefabInstance:
     - target: {fileID: 4931847113195853182, guid: 453428e723cbba04887de0860aea9c6d, type: 3}
       propertyPath: m_Name
       value: wall_door Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931847113195853182, guid: 453428e723cbba04887de0860aea9c6d, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5709051937956253636, guid: 453428e723cbba04887de0860aea9c6d, type: 3}
       propertyPath: m_RootOrder
@@ -3258,6 +3267,7 @@ GameObject:
   - component: {fileID: 1804334042}
   - component: {fileID: 1804334041}
   - component: {fileID: 1804334040}
+  - component: {fileID: 1804334043}
   m_Layer: 0
   m_Name: Borrador
   m_TagString: Untagged
@@ -3273,7 +3283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804334038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -80}
+  m_LocalPosition: {x: 0, y: 0, z: -41}
   m_LocalScale: {x: 50, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 520747710}
@@ -3341,6 +3351,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804334038}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1804334043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804334038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39a6c2c403621442a8a11a4d1f9f61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1984487451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3851,6 +3873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1106304387544347273, guid: f42c990fd3c24134c9e16a617b55b4bb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f42c990fd3c24134c9e16a617b55b4bb, type: 3}
 --- !u!4 &2110417527 stripped
@@ -3953,7 +3979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7266201109102566451, guid: 19f22241ca3b9964ca6f30b7bbb4b042, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7266201109102566451, guid: 19f22241ca3b9964ca6f30b7bbb4b042, type: 3}
       propertyPath: m_LocalPosition.x
