@@ -5,9 +5,13 @@ using UnityEngine;
 public class EnemyTrigger : MonoBehaviour
 {
     public GameObject[] objetos;
-    public float xo, xf;
-    public float zo = 1, zf = 15;
-    public int room;
+    public Transform[] puntos_O;
+    public GameObject[] Enemy;
+    public Transform[] puntos_E;
+    public int C_Enemy=5;
+    //public float xo, xf;
+    //public float zo = 1, zf = 15;
+    //public int room;
     private void Update()
     {
         
@@ -16,13 +20,17 @@ public class EnemyTrigger : MonoBehaviour
     // Start is called before the first frame update
     public void OnTriggerEnter(Collider other)
     {
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i < puntos_O.Length; i++) {
             int numeroAleatorio = Random.Range(0, objetos.Length);
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(xo,xf), 0 , Random.Range(zo,zf));
-            Instantiate(objetos[numeroAleatorio],randomSpawnPosition,Quaternion.identity);
+            Instantiate(objetos[numeroAleatorio],puntos_O[i].position,Quaternion.identity);
                 }
-        zo += 34;
-        zf += 34;
-    }
+        for (int i = 0; i < (puntos_E.Length) - C_Enemy; i++)
+        {
+            int numeroAleatorio = Random.Range(0, Enemy.Length);
+            int RPosition = Random.Range(0, puntos_E.Length);
+            Instantiate(Enemy[numeroAleatorio], puntos_E[RPosition].position, Quaternion.identity);
+        }
+        }
+
    
 }

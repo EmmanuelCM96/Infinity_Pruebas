@@ -2097,8 +2097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partesNivel:
-  - {fileID: 7048366955653333358, guid: 0408fbd8468ae4f4da89d5d6720616aa, type: 3}
-  - {fileID: 7593032562558461340, guid: 38eb01b066477ef4da620962a3fbc678, type: 3}
   - {fileID: 4541741486606953155, guid: de574bbdce7f53445a78378b5e206f3d, type: 3}
   distanciaMinima: 5
   puntoFinal: {fileID: 624098847}
