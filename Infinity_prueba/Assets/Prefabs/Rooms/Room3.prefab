@@ -495,7 +495,7 @@ MonoBehaviour:
   - {fileID: 5474298027348503933}
   - {fileID: 8582957956961835431}
   - {fileID: 5793132483209655110}
-  C_Enemy: 5
+  C_Enemy: 12
 --- !u!1 &4368201915054618619
 GameObject:
   m_ObjectHideFlags: 0
