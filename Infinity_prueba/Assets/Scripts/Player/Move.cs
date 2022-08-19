@@ -7,6 +7,9 @@ public class Move : MonoBehaviour
     Rigidbody rb;
     Vector3 movementInput;
     public float speed;
+    public float P_D= 5.5f;
+    public int score=2;
+    [SerializeField] private CombateP CP;
     // Start is called before the first frame update
     public void Awake()
     {
@@ -33,6 +36,15 @@ public class Move : MonoBehaviour
         {
             movementInput.x = -1;
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            CP.TomarDaño(P_D);
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            CP.contaMonedas(score);
+        }
+
     }
     protected void FixedUpdate()
     {

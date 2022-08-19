@@ -4,17 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayerEyes
   - PuntoFinal
   - Borrar
+  - select
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - rayCastDetec
   - Water
   - UI
-  - 
+  - ray
   - 
   - 
   - 
