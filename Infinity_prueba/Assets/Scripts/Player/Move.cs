@@ -38,7 +38,7 @@ public class Move : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
-            CP.TomarDaño(P_D);
+            CP.TomarDano(P_D);
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {

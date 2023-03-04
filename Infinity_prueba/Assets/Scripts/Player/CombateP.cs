@@ -34,9 +34,9 @@ public class CombateP : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void TomarDaño(float daño)
+    public void TomarDano(float dano)
     {
-        vida -= daño;
+        vida -= dano;
         barra.VidaActual(vida);
         if (vida <= 0)
         {
